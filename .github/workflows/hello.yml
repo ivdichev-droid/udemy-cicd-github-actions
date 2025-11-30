@@ -1,0 +1,13 @@
+name: Hello Actions
+
+on: [push]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checout code
+              uses: actions/checkout@v4
+
+            - name: say hello
+              run: echo "Hello from Udemy Course"
